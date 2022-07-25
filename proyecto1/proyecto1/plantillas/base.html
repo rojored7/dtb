@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+
+        {% block title%} {% endblock %}
+
+    </title>
+  </head>
+  <body>
+    <h1 style="background-color: darkred; color: black; text_aling:center">La pagina de red</h1>
+      {% include "barra.html" %}
+        <h3>Inicio  de html css y django</h3>
+    {% block content %}
+
+
+    {% endblock %}
+
+    <p style="background-color: darkred; color: black; text-aling:rigth"> Gracias por existir </p>
+  </body>
+</html>

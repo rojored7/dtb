@@ -1,0 +1,31 @@
+<html>
+  <body>
+    {% include "barra.html" %}
+  <h1 style="color: red">
+    red esta aqui
+  </h1>
+  {% if nombre_persona == 'RED' %}
+    <p> Red esta aqui</p>
+  {% else %}
+    <p> Aqui tambien esta pero diferente </p>
+  {% endif %}
+
+  <p>El nombre del jefe es: {{nombre_persona}}</p>
+  <p>Su apellido es: {{apellido_persona}}</p>
+  <p>El tiempo es {{Ahora.day}} / {{Ahora.month}} / {{Ahora.year}}</p>
+  <p><strong>Temas del curso</strong></p>
+  <p>
+    <ul>
+    {% if temas %}
+      {% for el_tema in temas %}
+        <li>{{el_tema}}</li>
+      {% endfor %}
+    {% else %}
+      <p>No hay elementos que mostrar</p>
+    {% endif %}
+   </ul>
+
+  </p>
+  <p>{{temas.1}}</p>
+  </body>
+  </html>
